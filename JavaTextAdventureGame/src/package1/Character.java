@@ -6,10 +6,14 @@ public class Character {
 	int mp; // Does nothing currently, mana will be added at a later point.
 	
 	// Constructor
-	public Character(String gender, String race, String job)
+	public Character(String gender, String race, String job, int charID)
 	{
 		hp = 100;
 		mp = 0; // Mana will be added at a later point.
+		
+		// Inventory Set Up
+		Inventory charInventory = new Inventory(0);
+		
 	}
 	
 	// Methods
@@ -24,6 +28,8 @@ public class Character {
 	{
 		return mp;
 	}
+	
+	// Void Methods
 	
 	// Deals damage to the character.
 	public void damage(int damageDealt)

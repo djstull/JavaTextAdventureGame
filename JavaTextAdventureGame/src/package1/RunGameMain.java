@@ -4,7 +4,7 @@ public class RunGameMain {
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to the game!");
-		Character player = new Character("Male", "Human", "Warrior");
+		Character player = new Character("Male", "Human", "Warrior", 0);
 		player.damage(10);
 		System.out.println(player.getHealth());
 
